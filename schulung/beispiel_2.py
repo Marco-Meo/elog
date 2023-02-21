@@ -36,8 +36,8 @@ def funktion_mit_variablen(var_a, var_b = 1, *args, **kwargs):
 
 if __name__ == '__main__':
     # text = text_zusammenfuehren("hallo ", "welt")
-    # text = text_n_zusammenfuehren("hallo", "welt", "dfasdkj", "sdkd")
+    text = text_n_zusammenfuehren("hallo", "welt", "dfasdkj", "sdkd")
     # funktion_mit_variablen("A", "B", "C", "D", E="E", F="F")
-    a = lambda x: x * x
-    print(a(10))
-    #print(text)
+    # a = lambda x: x * x
+    # print(a(10))
+    print(text)

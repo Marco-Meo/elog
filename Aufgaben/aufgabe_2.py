@@ -12,8 +12,9 @@ def entferne_zahlen(text):
 def entferne_zahlen_aus_text(text: str) -> str:
     """
     Funktion, welche die Zahlen aus einem Text entfernt.
+    Zahlen innerhalb eines Wortes werden nicht entfernt.
     :param text:
-    :return:
+    :return: str Text ohne Zahlen
     """
     text = text.split()
     for wort in text:
@@ -25,5 +26,7 @@ def entferne_zahlen_aus_text(text: str) -> str:
 
 if __name__ == '__main__':
     text = "Meine 3 Kinder sind alle älter als 4 Jahre"
-    print(entferne_zahlen(text))
-    print(entferne_zahlen_aus_text(text))
+    text2 = "abc 3 der2"
+    # print(entferne_zahlen(text))
+    # print(entferne_zahlen_aus_text(text))
+    print(entferne_zahlen_aus_text(text2))
